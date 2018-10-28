@@ -1,63 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0196f46f-8b7b-4c04-a3a6-726c3e984cd2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/invoicemanager/InvoiceManager/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/invoicemanager/InvoiceManager/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/invoicemanager/InvoiceManager/controller/InvoiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/reports/invoice.jrxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fragments/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addInvoiceForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customerList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/invoiceList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/pl/invoicemanager/InvoiceManager/InvoiceManagerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/pl/invoicemanager/InvoiceManager/InvoiceManagerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-    </list>
+    <list default="true" id="0196f46f-8b7b-4c04-a3a6-726c3e984cd2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -440,15 +384,15 @@
       <workItem from="1539964235448" duration="466000" />
       <workItem from="1539964912533" duration="595000" />
       <workItem from="1540311110976" duration="8960000" />
-      <workItem from="1540749681441" duration="1957000" />
+      <workItem from="1540749681441" duration="2204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32641000" />
+    <option name="totallyTimeSpent" value="32888000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
