@@ -1,4 +1,6 @@
 pl\invoicemanager\InvoiceManager\InvoiceManagerApplication.class
+pl\invoicemanager\InvoiceManager\dao\InvoiceDao.class
 pl\invoicemanager\InvoiceManager\controller\CustomerController.class
+pl\invoicemanager\InvoiceManager\models\Invoice.class
 pl\invoicemanager\InvoiceManager\controller\InvoiceController.class
 pl\invoicemanager\InvoiceManager\controller\HomeController.class
