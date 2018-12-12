@@ -27,12 +27,12 @@ public class InvoiceController {
 
 	@RequestMapping("/add")
 	public String addInvoice(){
-		Invoice invoice = new Invoice();
-		Random random = new Random();
-		int randomNumber = random.nextInt(50)+1;
-		int randomMonth = random.nextInt(12)+1;
-		invoice.setInvoiceNumber(randomNumber+"/"+randomMonth+"/2001");
-		invoiceDao.save(invoice);
+//		Invoice invoice = new Invoice();
+//		Random random = new Random();
+//		int randomNumber = random.nextInt(50)+1;
+//		int randomMonth = random.nextInt(12)+1;
+//		invoice.setInvoiceNumber(randomNumber+"/"+randomMonth+"/2001");
+//		invoiceDao.save(invoice);
 		return "addInvoiceForm";
 	}
 
