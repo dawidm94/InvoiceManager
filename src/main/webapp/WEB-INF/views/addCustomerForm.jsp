@@ -7,6 +7,7 @@
 	<form:form modelAttribute="company" method="POST">
 	<div class="row">
 		<div class="col col-lg-7 offset-lg-2">
+			<form:errors path = "nip" cssClass = "error">Niepoprawny NIP!</form:errors>
 			<div class="input-group mb-3">
 				<div class="input-group-prepend">
 					<span class="input-group-text">NIP:</span>
@@ -20,6 +21,7 @@
 	</div>
 	<div class="row">
 		<div class="col col-lg-7 offset-lg-2">
+			<form:errors path = "name" cssClass = "error">Niepoprawna nazwa!</form:errors>
 			<div class="input-group mb-3">
 				<div class="input-group-prepend">
 					<span class="input-group-text">Nazwa:</span>
@@ -30,12 +32,19 @@
 	</div>
 	<div class="row">
 		<div class="col col-lg-7 offset-lg-2">
+			<form:errors path = "streetAddress" cssClass = "error">Niepoprawny adres!</form:errors>
 			<div class="input-group mb-3">
 				<div class="input-group-prepend">
 					<span class="input-group-text">Ulica :</span>
 				</div>
 				<form:input path="streetAddress" type="text" class="form-control" required="required"/>
 			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col col-lg-7 offset-lg-2">
+			<form:errors path = "postalCode" cssClass = "error">Niepoprawny kod pocztowy!</form:errors>
+			<form:errors path = "city" cssClass = "error">Niepoprawne miasto!</form:errors>
 		</div>
 	</div>
 	<div class="row">

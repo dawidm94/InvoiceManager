@@ -16,9 +16,11 @@ public class Company {
 	private long id;
 
 	@Column(name = "COMPANY_NAME", nullable = false)
+	@Pattern(regexp = ".{3,}")
 	private String name;
 
 	@Column(name = "COMPANY_ADDRESS_STREET")
+	@Pattern(regexp = ".*[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]{3,}\\s[0-9]+.*")
 	private String streetAddress;
 
 	@Column(name = "COMPANY_ADDRESS_POSTALCODE")
@@ -26,6 +28,7 @@ public class Company {
 	private String postalCode;
 
 	@Column(name = "COMPANY_ADDRESS_CITY")
+	@Pattern(regexp = "[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]{3,}")
 	private String city;
 
 	@NIP
