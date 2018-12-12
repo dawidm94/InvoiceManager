@@ -32,12 +32,14 @@ public class Company {
 	private String city;
 
 	@NIP
-	@Column(name = "COMPANY_NIP", unique = true, nullable = false)
+	@Column(name = "COMPANY_NIP", nullable = false)
 	private String nip;
 
 	@REGON
 	@Column(name = "COMPANY_REGON")
 	private String regon;
+
+	//TODO: Po możliwości rejestracji przypisać firmę do usera, który ją założył.
 
 	public long getId() {
 		return id;
