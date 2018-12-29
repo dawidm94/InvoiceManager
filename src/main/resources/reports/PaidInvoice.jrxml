@@ -619,14 +619,14 @@
 				</textElement>
 				<text><![CDATA[Zapłacono]]></text>
 			</staticText>
-			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="90" y="120" width="100" height="20" uuid="817cd885-819c-4e8a-8827-ac9c3edbaa61"/>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="90" y="120" width="100" height="20" uuid="a8ef2cbb-9aa2-4a61-99ff-8cdbaf5c7cd0"/>
 				<textElement>
 					<font fontName="DejaVu Sans" isBold="true" pdfEncoding="Cp1250"/>
 					<paragraph spacingBefore="4"/>
 				</textElement>
-				<text><![CDATA[20,20 PLN]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA[$P{invoice}.getTotalGrossSum() + " PLN"]]></textFieldExpression>
+			</textField>
 			<textField>
 				<reportElement stretchType="RelativeToTallestObject" x="90" y="137" width="150" height="20" uuid="b325874b-c784-4e91-aa64-1f6a29d6f831"/>
 				<textElement verticalAlignment="Middle">

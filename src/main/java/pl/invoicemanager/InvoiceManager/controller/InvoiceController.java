@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pl.invoicemanager.InvoiceManager.dao.CompanyDao;
 import pl.invoicemanager.InvoiceManager.dao.InvoiceDao;
@@ -14,6 +15,7 @@ import pl.invoicemanager.InvoiceManager.models.Invoice;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -43,27 +45,22 @@ public class InvoiceController {
 
 	@RequestMapping("/list")
 	public String showInvoices(Model model){
-		List<Invoice> invoices = invoiceDao.findAll();
+		List<Invoice> invoices = invoiceDao.findAllByOrderBySoldDateDesc();
 		model.addAttribute("invoices", invoices);
 		return "invoiceList";
 	}
 
-	@RequestMapping("/generate")
-	public void generateInvoice(HttpServletResponse response) throws IOException, JRException {
+	@RequestMapping("/generate/{id}")
+	public void generateInvoice(HttpServletResponse response, @PathVariable("id") Long invoiceId) throws IOException, JRException {
 //		String path = resourceLoader.getResource("classpath:/reports/invoice.jrxml").getURI().getPath();
 		String path = resourceLoader.getResource("classpath:/reports/PaidInvoice.jrxml").getURI().getPath();
 		JasperReport jasperReport = JasperCompileManager.compileReport(path);
 		JRDataSource jrDataSource = new JREmptyDataSource();
+		Invoice invoice = invoiceDao.findById(invoiceId).get();
 /////////////////////////////
-		Invoice invoice = new Invoice();
-		invoice.setInvoiceNumber("1/01/2019");
-		invoice.setCreateDate(new Date());
-		invoice.setSoldDate(new Date());
-		invoice.setPaidDate(new Date());
-		invoice.setPaymentType("gotówka");
 		List<Company> companies = companyDao.findAll();
 		Company company = companies.get(0);
-		Company company2 = companies.get(1);
+		Company company2 = invoice.getCompany();
 
 		////////////////////////////
 		Map<String,Object> parameters = new HashMap<>();

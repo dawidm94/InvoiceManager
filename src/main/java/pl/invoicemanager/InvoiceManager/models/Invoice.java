@@ -1,6 +1,7 @@
 package pl.invoicemanager.InvoiceManager.models;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
@@ -27,9 +28,16 @@ public class Invoice {
 	@Column(name = "INVOICE_PAYMENT_TYPE")
 	private String paymentType;
 
+	@Column(name = "INVOICE_TOTAL_GROSS_SUM")
+	private BigDecimal totalGrossSum;
+
 	@ManyToOne
 	@JoinColumn(name = "COMPANY_ID", nullable = false)
 	private Company company;
+
+	public long getId() {
+		return id;
+	}
 
 	public String getInvoiceNumber() {
 		return invoiceNumber;
@@ -69,6 +77,14 @@ public class Invoice {
 
 	public void setPaymentType(String paymentType) {
 		this.paymentType = paymentType;
+	}
+
+	public BigDecimal getTotalGrossSum() {
+		return totalGrossSum;
+	}
+
+	public void setTotalGrossSum(BigDecimal totalGrossSum) {
+		this.totalGrossSum = totalGrossSum;
 	}
 
 	public Company getCompany() {

@@ -26,7 +26,7 @@
 				<a class="nav-link" href="/customers/list">Klienci</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/invoice/generate">Generuj raport</a>
+				<a class="nav-link" href="/register">Rejestracja</a>
 			</li>
 		</ul>
 		<span class="navbar-text">
